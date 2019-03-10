@@ -1,0 +1,34 @@
+page-home {
+    ion-content {
+        @include linear-gradient(left,$green-and-blue);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+      .header-color{
+        background-color: rebeccapurple;
+    }
+    :host{
+        flex-grow: 1;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    div.input{
+        position:relative;
+    }
+    div.input label{
+        position: absolute;;
+        top: 0;
+        background: white;
+        left: 10px;
+        transform: translateY(-50%);
+        padding: 5px 2px;
+    }
+    div.input input{
+       font-size: 25px;
+       outline: 0;
+        padding: 10px 20px;
+    }
+}
